@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+    <record id="res_config_settings_view_form_sun_macro_persian"
+            model="ir.ui.view">
+
+      <field name="name">res.config.settings.view.form.sun.macro.persian.localization</field>
+
+      <field name="model">res.config.settings</field>
+        <field name="inherit_id"
+               ref="base_setup.res_config_settings_view_form"/>
+
+        <field name="arch" type="xml">
+
+            <xpath expr="//form" position="inside">
+
+                <app
+                    name="sun_macro_persian_localization"
+                    string="Sun Macro Persian Localization">
+
+
+                    <block title="تنظیمات فارسی‌سازی">
+
+                        <setting
+                            id="enable_rtl_setting"
+                            string="رابط راست‌چین">
+
+                            <field name="enable_rtl"/>
+
+                        </setting>
+
+
+                        <setting
+                            id="persian_numbers_setting"
+                            string="اعداد فارسی">
+
+                            <field name="use_persian_numbers"/>
+
+                        </setting>
+
+
+                        <setting
+                            id="jalali_date_setting"
+                            string="تاریخ شمسی">
+
+                            <field name="jalali_date"/>
+
+                        </setting>
+
+
+                        <setting
+                            id="font_family_setting"
+                            string="فونت فارسی">
+
+                            <field name="font_family"/>
+
+                        </setting>
+
+
+                    </block>
+
+
+                </app>
+
+            </xpath>
+
+        </field>
+
+    </record>
+
+</odoo>

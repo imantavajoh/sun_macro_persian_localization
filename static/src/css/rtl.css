@@ -1,0 +1,124 @@
+/* Sun Macro Persian Localization */
+/* RTL + Persian Fonts */
+
+
+/* =========================
+   Persian Fonts
+========================= */
+
+@font-face {
+    font-family: 'Vazirmatn';
+    src: url('/sun_macro_persian_localization/static/src/fonts/Vazirmatn-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Shabnam';
+    src: url('/sun_macro_persian_localization/static/src/fonts/Shabnam-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+/* =========================
+   RTL Interface
+========================= */
+
+.o_web_client {
+    direction: rtl;
+}
+
+
+.o_main_navbar {
+    direction: rtl;
+}
+
+
+.o_menu_brand {
+    direction: rtl;
+}
+
+
+.o_form_view {
+    direction: rtl;
+}
+
+
+.o_list_view {
+    direction: rtl;
+}
+
+
+.o_kanban_view {
+    direction: rtl;
+}
+
+
+.o_control_panel {
+    direction: rtl;
+}
+
+
+/* =========================
+   Font Variables
+========================= */
+
+:root {
+    --font-family-sans-serif: 'Vazirmatn', sans-serif;
+}
+
+
+/* =========================
+   Dynamic Font Classes
+========================= */
+
+body.font-vazirmatn,
+body.font-vazirmatn * {
+    font-family: 'Vazirmatn', sans-serif !important;
+}
+
+
+body.font-shabnam,
+body.font-shabnam * {
+    font-family: 'Shabnam', sans-serif !important;
+}
+
+
+
+
+/* =========================
+   Odoo Components Override
+========================= */
+
+.o_web_client,
+.o_web_client * {
+    font-family: inherit;
+}
+
+
+.o_main_navbar,
+.o_main_navbar * {
+    font-family: inherit;
+}
+
+
+.o_form_view,
+.o_form_view * {
+    font-family: inherit;
+}
+
+
+.o_list_view,
+.o_list_view * {
+    font-family: inherit;
+}
+
+
+.o_kanban_view,
+.o_kanban_view * {
+    font-family: inherit;
+}

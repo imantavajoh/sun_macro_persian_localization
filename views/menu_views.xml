@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+    <menuitem
+        id="menu_sun_macro_persian_localization_root"
+        name="Sun Macro Persian Localization"
+        parent="base.menu_administration"
+        sequence="100"
+    />
+
+</odoo>
